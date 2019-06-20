@@ -1,25 +1,39 @@
 <template>
   <nav ref="navBar" id="navbar" class="sm-border-bottom">
     <div class="r">
-
       <div class="c-4 xs-text-left xs-p2 sm-border-right">
         <div class="item">
-          <nuxt-link class="sitename" to="/" exact>{{headerSiteName}}</nuxt-link>
+          <nuxt-link class="sitename" to="/" exact>Test{{headerSiteName}}</nuxt-link>
         </div>
       </div>
 
-      <div class="c-4 xs-border-top xs-border-bottom sm-border-top-none sm-border-bottom-none sm-border-left sm-border-right xs-p2">
+      <div
+        class="c-4 xs-border-top xs-border-bottom sm-border-top-none sm-border-bottom-none sm-border-left sm-border-right xs-p2"
+      >
         <div class="item xs-flex">
-          <VueFuse placeholder="Search" :compResults="compResults" :keys="keys" :list="allPosts" event-name="searchChanged" />
+          <VueFuse
+            placeholder="Search"
+            :compResults="compResults"
+            :keys="keys"
+            :list="allPosts"
+            event-name="searchChanged"
+          />
         </div>
-
       </div>
-      <div v-if="blogtitle" style="z-index:55;" class="c-12 xs-border-top xs-border-bottom xs-p2 xs-text-6 titlebar">
+      <div
+        v-if="blogtitle"
+        style="z-index:55;"
+        class="c-12 xs-border-top xs-border-bottom xs-p2 xs-text-6 titlebar"
+      >
         <div class="item">
           <nuxt-link to="/" exact>Home</nuxt-link>
-          <span v-show="crumb"> &nbsp;
-            <span class="text-gray-lightest"> > </span> &nbsp; {{thecrumb}} </span> &nbsp;
-          <span class="text-gray-lightest"> > </span> &nbsp; {{blogtitle}}
+          <span v-show="crumb">
+            &nbsp;
+            <span class="text-gray-lightest">></span>
+            &nbsp; {{thecrumb}}
+          </span> &nbsp;
+          <span class="text-gray-lightest">></span>
+          &nbsp; {{blogtitle}}
         </div>
       </div>
     </div>
@@ -60,18 +74,16 @@ export default {
     componentResults() {
       return this.$store.state.results;
     },
-     crumb() {
+    crumb() {
       return this.$store.state.theCrumb;
     }
   },
 
   methods: {
-
     navHeight() {
       var height = document.getElementById("navbar").clientHeight;
       console.log(height);
       this.$store.commit("SET_NAVHEIGHT", height - 1);
- 
     }
   },
 
@@ -83,7 +95,9 @@ export default {
 };
 </script>
 <style>
-#navbar {z-index:999;}
+#navbar {
+  z-index: 999;
+}
 .titlebar .item {
   overflow-x: none;
 }
