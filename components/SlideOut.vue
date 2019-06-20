@@ -50,7 +50,7 @@ export default {
 
     menuSiteName() {
       return this.$store.state.siteInfo.sitename;
-    }
+    },
   },
   methods: {
     open() {

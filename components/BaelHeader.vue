@@ -3,7 +3,7 @@
     <div class="r">
       <div class="c-4 xs-text-left xs-p2 sm-border-right">
         <div class="item">
-          <nuxt-link class="sitename" to="/" exact>Test{{headerSiteName}}</nuxt-link>
+          <nuxt-link class="sitename" to="/" exact>{{headerSiteName}}</nuxt-link>
         </div>
       </div>
 
@@ -95,9 +95,7 @@ export default {
 };
 </script>
 <style>
-#navbar {
-  z-index: 999;
-}
+
 .titlebar .item {
   overflow-x: none;
 }
@@ -110,13 +108,7 @@ export default {
   list-style-type: none;
   margin-left: 0;
 }
-nav {
-  position: fixed;
-  background: white;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
 .sitename {
   color: #000;
   font-family: "Archivo Black", sans-serif;

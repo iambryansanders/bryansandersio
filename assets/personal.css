@@ -1,0 +1,36 @@
+#VXTnAYktjzaAVHmseYVGgXIXI {
+    color: rgb(115, 138, 148);
+    cursor: pointer;
+    display: block;
+    font: normal normal 500 normal 12px / 13.8px -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform-origin: 138.5px 6.5px;
+    text-decoration: none;
+}
+
+.post-card-image {
+    max-width: 100%;
+}
+
+.post-card-title {
+    cursor: pointer;
+    display: block;
+    font: normal normal 700 normal 26px / 29.9px -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color:rgb(21, 23, 26);
+
+
+}
+
+.post-card {
+    color: rgb(21, 23, 26);
+    cursor: pointer;
+    display: block;
+    box-shadow: rgba(39, 44, 49, 0.07) 8px 28px 50px 0px, rgba(39, 44, 49, 0.04) 1px 6px 12px 0px;
+    font: normal normal 700 normal 20px / 23px -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    margin: 50px auto;
+    max-width: 30%;
+}
